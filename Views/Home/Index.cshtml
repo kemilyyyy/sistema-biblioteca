@@ -1,0 +1,48 @@
+﻿@model sistema_biblioteca.ViewModels.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Painel";
+}
+
+<div class="container py-4">
+    <h2 class="mb-4">Painel de Controle</h2>
+
+    <div class="row g-3">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6 class="text-muted">Total de Livros</h6>
+                    <h3 class="display-6">@Model.TotalLivros</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6 class="text-muted">Livros Emprestados</h6>
+                    <h3 class="display-6">@Model.LivrosEmprestados</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6 class="text-muted">Clientes Cadastrados</h6>
+                    <h3 class="display-6">@Model.ClientesCadastrados</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6 class="text-muted">Empréstimos Atrasados</h6>
+                    <h3 class="display-6 text-danger">@Model.EmprestimosAtrasados</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,46 @@
+@model IEnumerable<sistema_biblioteca.Models.Livro>
+
+@{
+    ViewData["Title"] = "Livros";
+    var role = Context.Session.GetString("Role");
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Catálogo de Livros</h2>
+    @if (role == "Bibliotecario")
+    {
+        <a class="btn btn-primary" asp-action="Create">Cadastrar Livro</a>
+    }
+</div>
+
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+    <thead class="table-light">
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Gênero</th>
+            <th>Estoque</th>
+            <th>Ativo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Titulo</td>
+            <td>@item.Autor</td>
+            <td>@item.Genero</td>
+            <td>@item.QtdEstoque</td>
+            <td>@(item.Ativo ? "Sim" : "Não")</td>
+            <td>
+                <a class="btn btn-sm btn-outline-secondary me-1" asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                <a class="btn btn-sm btn-outline-primary me-1" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                <a class="btn btn-sm btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,32 @@
+@model sistema_biblioteca.Models.Emprestimo
+
+@{
+    ViewData["Title"] = "Detalhes do Empréstimo";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h3>@Model.Livro?.Titulo</h3>
+        <p class="text-muted">Cliente: @Model.Cliente?.Nome</p>
+
+        <dl class="row mt-3">
+            <dt class="col-sm-3">Retirada</dt>
+            <dd class="col-sm-9">@Model.DataRetirada.ToString("yyyy-MM-dd")</dd>
+
+            <dt class="col-sm-3">Previsão</dt>
+            <dd class="col-sm-9">@Model.DataPrevisaoDevolucao.ToString("yyyy-MM-dd")</dd>
+
+            <dt class="col-sm-3">Devolução</dt>
+            <dd class="col-sm-9">@(Model.DataDevolucao?.ToString("yyyy-MM-dd") ?? "-")</dd>
+
+            <dt class="col-sm-3">Atrasado</dt>
+            <dd class="col-sm-9">@(Model.EstaAtrasado ? "Sim" : "Não")</dd>
+        </dl>
+
+        <a class="btn btn-secondary" asp-action="Index">Voltar</a>
+        @if (Model.DataDevolucao == null)
+        {
+            <a class="btn btn-success" asp-action="Devolver" asp-route-id="@Model.Id">Devolver</a>
+        }
+    </div>
+</div>

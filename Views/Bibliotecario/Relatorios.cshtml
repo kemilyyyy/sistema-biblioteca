@@ -1,0 +1,67 @@
+@model IEnumerable<sistema_biblioteca.Models.Emprestimo>
+
+@{
+    ViewData["Title"] = "Relatórios de gestão";
+    var atrasados = Model.ToList();
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <p class="text-muted mb-1">Relatórios</p>
+            <h1 class="h2 mb-0">Livros em atraso</h1>
+        </div>
+        <a asp-action="Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Voltar ao painel
+        </a>
+    </div>
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2 class="h5 mb-1">Resumo</h2>
+                    <p class="text-muted mb-0">Acompanhe os exemplares com devolução prevista já ultrapassada.</p>
+                </div>
+                <span class="badge bg-danger fs-6">@atrasados.Count registros</span>
+            </div>
+        </div>
+    </div>
+
+    @if (!atrasados.Any())
+    {
+        <div class="alert alert-success">
+            <i class="bi bi-check-circle me-2"></i>Nenhum empréstimo atrasado no momento.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Livro</th>
+                        <th>Data retirada</th>
+                        <th>Previsão</th>
+                        <th>Dias de atraso</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in atrasados)
+                    {
+                        <tr>
+                            <td>@item.Cliente?.Nome</td>
+                            <td>@item.Livro?.Titulo</td>
+                            <td>@item.DataRetirada.ToString("dd/MM/yyyy")</td>
+                            <td>@item.DataPrevisaoDevolucao.ToString("dd/MM/yyyy")</td>
+                            <td>@item.DiasAtraso</td>
+                            <td><span class="badge bg-danger">Em atraso</span></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

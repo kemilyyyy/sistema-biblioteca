@@ -1,0 +1,93 @@
+@model sistema_biblioteca.ViewModels.RoleDashboardViewModel
+
+@{
+    ViewData["Title"] = "Painel do Atendente";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <p class="text-muted mb-1">Bem-vindo ao painel de</p>
+            <h1 class="h2 mb-0">@Model.RoleName</h1>
+        </div>
+        <div class="badge bg-primary bg-opacity-10 text-primary fs-6 px-3 py-2">
+            <i class="bi bi-person-badge me-2"></i> Operação diária
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-2">Livros disponíveis</p>
+                    <h3 class="mb-0">@Model.LivrosDisponiveis</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-2">Empréstimos ativos</p>
+                    <h3 class="mb-0">@Model.LivrosEmprestados</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-2">Clientes cadastrados</p>
+                    <h3 class="mb-0">@Model.ClientesCadastrados</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-2">Itens em atraso</p>
+                    <h3 class="mb-0 text-danger">@Model.EmprestimosAtrasados</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h2 class="h5 mb-3"><i class="bi bi-arrow-up-right-circle me-2 text-primary"></i>Empréstimos</h2>
+                    <p class="text-muted">Registre novos empréstimos e acompanhe o histórico da operação.</p>
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Emprestimos" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle me-2"></i>Novo empréstimo</a>
+                        <a asp-controller="Emprestimos" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-list-ul me-2"></i>Ver empréstimos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h2 class="h5 mb-3"><i class="bi bi-arrow-down-circle me-2 text-success"></i>Devoluções</h2>
+                    <p class="text-muted">Acesse os registros ativos e finalize a devolução com rapidez.</p>
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Emprestimos" asp-action="Index" class="btn btn-success"><i class="bi bi-check2-circle me-2"></i>Registrar devolução</a>
+                        <a asp-controller="Livros" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-search me-2"></i>Consultar disponibilidade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h2 class="h5 mb-3"><i class="bi bi-person-plus me-2 text-warning"></i>Cadastros</h2>
+                    <p class="text-muted">Cadastre novos usuários e mantenha a base atualizada.</p>
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Usuarios" asp-action="Create" class="btn btn-warning"><i class="bi bi-person-plus me-2"></i>Novo usuário</a>
+                        <a asp-controller="Usuarios" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-people me-2"></i>Ver usuários</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

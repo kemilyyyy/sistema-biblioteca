@@ -1,0 +1,31 @@
+@model sistema_biblioteca.Models.Usuario
+
+@{
+    ViewData["Title"] = "Excluir Usuário";
+}
+
+<h2>Excluir Usuário</h2>
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Nome</dt>
+            <dd class="col-sm-9">@Model.Nome</dd>
+
+            <dt class="col-sm-3">CPF</dt>
+            <dd class="col-sm-9">@Model.Cpf</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+
+            <dt class="col-sm-3">Telefone</dt>
+            <dd class="col-sm-9">@Model.Telefone</dd>
+        </dl>
+
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="IdUsuario" />
+            <button type="submit" class="btn btn-danger">Confirmar Exclusão</button>
+            <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
+        </form>
+    </div>
+</div>

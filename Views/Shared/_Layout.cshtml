@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - sistema_biblioteca</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/sistema_biblioteca.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-book-half me-2" style="font-size:1.25rem"></i>
+                    <span>sistema_biblioteca</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index"><i class="bi bi-speedometer2 me-1"></i> Painel</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Livros" asp-action="Index"><i class="bi bi-journal-bookmark me-1"></i> Livros</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Clientes" asp-action="Index"><i class="bi bi-people me-1"></i> Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Emprestimos" asp-action="Index"><i class="bi bi-box-arrow-up-right me-1"></i> Empréstimos</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Funcionarios" asp-action="Index"><i class="bi bi-person-badge me-1"></i> Funcionários</a></li>
+                    </ul>
+
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar título, autor..." aria-label="Search">
+                        <button class="btn btn-light btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <div class="d-flex align-items-center">
+                        @{ var currentRole = Context.Session.GetString("Role"); }
+                        @if (string.IsNullOrWhiteSpace(currentRole))
+                        {
+                            <a class="btn btn-outline-light btn-sm me-2" asp-controller="Auth" asp-action="Login"><i class="bi bi-box-arrow-in-right"></i> Entrar</a>
+                        }
+                        else
+                        {
+                            <span class="badge bg-light text-primary me-2">@currentRole</span>
+                            <a class="btn btn-outline-light btn-sm" asp-controller="Auth" asp-action="Logout"><i class="bi bi-box-arrow-left"></i> Sair</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+
+            @* mensagens globais de TempData *@
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i> @TempData["Success"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i> @TempData["Error"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (TempData["Info"] != null)
+            {
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <i class="bi bi-info-circle-fill me-2"></i> @TempData["Info"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - sistema_biblioteca - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

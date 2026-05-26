@@ -1,0 +1,52 @@
+@model sistema_biblioteca.Models.Livro
+
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <label asp-for="Titulo" class="form-label"></label>
+                    <input asp-for="Titulo" class="form-control" />
+                    <span asp-validation-for="Titulo" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Autor" class="form-label"></label>
+                    <input asp-for="Autor" class="form-control" />
+                    <span asp-validation-for="Autor" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="ISBN" class="form-label"></label>
+                        <input asp-for="ISBN" class="form-control" />
+                        <span asp-validation-for="ISBN" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Genero" class="form-label"></label>
+                        <input asp-for="Genero" class="form-control" />
+                        <span asp-validation-for="Genero" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="DataPublicacao" class="form-label"></label>
+                        <input asp-for="DataPublicacao" class="form-control" type="date" />
+                        <span asp-validation-for="DataPublicacao" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="QtdEstoque" class="form-label"></label>
+                        <input asp-for="QtdEstoque" class="form-control" />
+                        <span asp-validation-for="QtdEstoque" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input asp-for="Ativo" class="form-check-input" />
+                    <label asp-for="Ativo" class="form-check-label"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+@model sistema_biblioteca.ViewModels.RoleDashboardViewModel
+
+@{
+    ViewData["Title"] = "Painel do Bibliotecário";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <p class="text-muted mb-1">Bem-vindo ao painel de</p>
+            <h1 class="h2 mb-0">@Model.RoleName</h1>
+        </div>
+        <div class="badge bg-success bg-opacity-10 text-success fs-6 px-3 py-2">
+            <i class="bi bi-shield-check me-2"></i> Gestão e suporte
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-2">Livros no acervo</p>
+                    <h3 class="mb-0">@Model.TotalLivros</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-2">Livros disponíveis</p>
+                    <h3 class="mb-0">@Model.LivrosDisponiveis</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-2">Livros inativos</p>
+                    <h3 class="mb-0">@Model.LivrosInativos</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-2">Empréstimos atrasados</p>
+                    <h3 class="mb-0 text-danger">@Model.EmprestimosAtrasados</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h2 class="h5 mb-3"><i class="bi bi-journal-bookmark me-2 text-primary"></i>Acervo</h2>
+                    <p class="text-muted">Cadastre novos livros e mantenha o catálogo atualizado.</p>
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Livros" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle me-2"></i>Cadastrar livro</a>
+                        <a asp-controller="Livros" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-search me-2"></i>Ver catálogo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h2 class="h5 mb-3"><i class="bi bi-slash-circle me-2 text-warning"></i>Exemplares</h2>
+                    <p class="text-muted">Marque exemplares como inativos quando houver perda ou dano.</p>
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Livros" asp-action="Index" class="btn btn-warning"><i class="bi bi-pencil-square me-2"></i>Gerenciar ativos</a>
+                        <a asp-controller="Emprestimos" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-arrow-repeat me-2"></i>Revisar empréstimos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h2 class="h5 mb-3"><i class="bi bi-bar-chart-line me-2 text-success"></i>Relatórios</h2>
+                    <p class="text-muted">Acesse indicadores e relatórios de gestão, como livros em atraso.</p>
+                    <div class="d-grid gap-2">
+                        <a asp-action="Relatorios" class="btn btn-success"><i class="bi bi-file-earmark-text me-2"></i>Ver relatórios</a>
+                        <a asp-controller="Usuarios" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-people me-2"></i>Usuários do sistema</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
