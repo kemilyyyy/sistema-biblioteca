@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kemil\\OneDrive\\Desktop\\sistema biblioteca\\sistema biblioteca.csproj": {}
+    "/workspaces/sistema-biblioteca/sistema biblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kemil\\OneDrive\\Desktop\\sistema biblioteca\\sistema biblioteca.csproj": {
+    "/workspaces/sistema-biblioteca/sistema biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kemil\\OneDrive\\Desktop\\sistema biblioteca\\sistema biblioteca.csproj",
+        "projectUniqueName": "/workspaces/sistema-biblioteca/sistema biblioteca.csproj",
         "projectName": "sistema biblioteca",
-        "projectPath": "C:\\Users\\kemil\\OneDrive\\Desktop\\sistema biblioteca\\sistema biblioteca.csproj",
-        "packagesPath": "C:\\Users\\kemil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kemil\\OneDrive\\Desktop\\sistema biblioteca\\obj\\",
+        "projectPath": "/workspaces/sistema-biblioteca/sistema biblioteca.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/sistema-biblioteca/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kemil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -24,7 +24,6 @@
         },
         "frameworks": {
           "net8.0": {
-            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -39,11 +38,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -72,6 +70,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -80,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

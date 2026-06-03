@@ -8,169 +8,168 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = sistema_biblioteca
 build_property.RootNamespace = sistema_biblioteca
-build_property.ProjectDir = C:\Users\kemil\OneDrive\Desktop\sistema biblioteca\
+build_property.ProjectDir = /workspaces/sistema-biblioteca/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kemil\OneDrive\Desktop\sistema biblioteca
+build_property.MSBuildProjectDirectory = /workspaces/sistema-biblioteca
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Atendente/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRlbmRlbnRlXEluZGV4LmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Atendente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXRlbmRlbnRlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Auth/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Bibliotecario/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYXJpb1xJbmRleC5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Bibliotecario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmlibGlvdGVjYXJpby9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Bibliotecario/Relatorios.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYXJpb1xSZWxhdG9yaW9zLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Bibliotecario/Relatorios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmlibGlvdGVjYXJpby9SZWxhdG9yaW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Clientes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Clientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Clientes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Clientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Clientes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Clientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Clientes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Clientes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Clientes/_Form.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcX0Zvcm0uY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Clientes/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvX0Zvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Emprestimos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzdGltb3NcQ3JlYXRlLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Emprestimos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Emprestimos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzdGltb3NcRGV0YWlscy5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Emprestimos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Emprestimos/Devolver.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzdGltb3NcRGV2b2x2ZXIuY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Emprestimos/Devolver.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvRGV2b2x2ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Emprestimos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzdGltb3NcSW5kZXguY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Emprestimos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Funcionarios/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXENyZWF0ZS5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Funcionarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW9zL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Funcionarios/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXERlbGV0ZS5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Funcionarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW9zL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Funcionarios/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXERldGFpbHMuY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Funcionarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW9zL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Funcionarios/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXEVkaXQuY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Funcionarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW9zL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Funcionarios/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXEluZGV4LmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Funcionarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW9zL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Funcionarios/_Form.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXF9Gb3JtLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Funcionarios/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRnVuY2lvbmFyaW9zL19Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Livros/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXENyZWF0ZS5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Livros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Livros/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXERlbGV0ZS5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Livros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Livros/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXERldGFpbHMuY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Livros/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Livros/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXEVkaXQuY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Livros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Livros/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXEluZGV4LmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Livros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Livros/_Form.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXF9Gb3JtLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Livros/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL19Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Usuarios/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Usuarios/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Usuarios/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Usuarios/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Usuarios/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+[/workspaces/sistema-biblioteca/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/workspaces/sistema-biblioteca/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/workspaces/sistema-biblioteca/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kemil/OneDrive/Desktop/sistema biblioteca/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-tf3q636qwh
+[/workspaces/sistema-biblioteca/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-r7c1d5s680
